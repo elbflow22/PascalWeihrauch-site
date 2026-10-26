@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Pascal Weihrauch – Produktdaten für Lebensmittelhersteller</title>
+<title>Produktdaten-Audit für Lebensmittelhersteller | Pascal Weihrauch</title>
 <meta name="description" content="Ich finde, wo die Produktdaten von Lebensmittelherstellern zwischen Shop, Händlern und Marktplätzen auseinanderlaufen – und bringe sie auf einen Stand.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2316243A'/%3E%3Crect x='7' y='17' width='18' height='6' fill='%23FFE14D'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' text-anchor='middle' fill='%2316243A'%3EPW%3C/text%3E%3C/svg%3E">
 <link rel="canonical" href="https://pascalweihrauch.de/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
 <meta property="og:url" content="https://pascalweihrauch.de/">
-<meta property="og:title" content="Pascal Weihrauch – Produktdaten für Lebensmittelhersteller">
+<meta property="og:title" content="Produktdaten-Audit für Lebensmittelhersteller | Pascal Weihrauch">
 <meta property="og:description" content="Ich finde, wo die Produktdaten Ihrer Lebensmittel zwischen Shop, Handel und Marktplätzen auseinanderlaufen.">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
@@ -43,7 +43,7 @@
   <div class="hero-text">
     <p class="kicker">Produktdaten für Lebensmittelhersteller</p>
     <h1>Dieselbe Packung. Drei verschiedene Produktdaten.</h1>
-    <p class="lead">Ich finde, wo die Produktdaten Ihrer Lebensmittel zwischen Shop, Handel und Marktplätzen auseinanderlaufen – und helfe Ihnen, daraus wieder eine einheitliche Datengrundlage zu machen.</p>
+    <p class="lead">Falsche Pflichtangaben, veraltete Produktinformationen und fehlende Suchattribute bleiben im Handel oft unbemerkt. Ich finde diese Abweichungen in Ihren Vertriebskanälen, dokumentiere sie nachvollziehbar und unterstütze Sie bei der Bereinigung.</p>
     <div class="hero-actions">
       <a class="btn" href="termin/">Erstgespräch vereinbaren</a>
       <a class="textlink" href="#beispielbefund">Beispielbefund ansehen</a>
@@ -70,6 +70,56 @@
   </figure>
 </section>
 
+<section class="case wrap" id="beispielbefund">
+  <h2>So sieht ein Befund im Audit aus</h2>
+  <p class="section-lead">Auszug aus einem Audit-Bericht. Produkt, Werte und Händler sind verändert; die Art der Abweichungen stammt aus echten Befunden der Stichprobe.</p>
+
+  <dl class="case-meta">
+    <div><dt>Produkt</dt><dd>Hafer-Porridge Zimt &amp; Apfel, 400 g</dd></div>
+    <div><dt>Geprüfte Kanäle</dt><dd>Eigener Shop, Händler A (Onlineshop einer Supermarktkette), Marktplatz B</dd></div>
+    <div><dt>Referenz im Auftrag</dt><dd>Vom Hersteller bereitgestellte Spezifikation und Verpackung. In der öffentlichen Stichprobe vergleiche ich nur öffentlich sichtbare Angaben.</dd></div>
+  </dl>
+
+  <ol class="case-list">
+    <li>
+      <div class="case-head"><h3>Nährwerte rechnen nicht auf</h3><span class="prio prio-high">Sofort beheben</span></div>
+      <p><strong>Marktplatz B:</strong> 1.631 kJ / 289 kcal je 100 g. 1.631 kJ entsprechen rund 390 kcal; Shop, Händler und Verpackung nennen 1.511 kJ / 358 kcal.</p>
+      <p class="case-why">Pflichtangabe. Mögliche Ursache: Nach einer Rezepturänderung wurde nur ein Wert übernommen.</p>
+    </li>
+    <li>
+      <div class="case-head"><h3>Zweite, veraltete Herstelleranschrift</h3><span class="prio prio-high">Sofort beheben</span></div>
+      <p><strong>Händler A:</strong> alte Anschrift, Hausnummer und Postleitzahl zusammengeklebt („Bergstr. 4081379 München“). Shop und Verpackung nennen die aktuelle Anschrift.</p>
+      <p class="case-why">Pflichtangabe. Mögliche Ursache: Das Datenblatt beim Händler wurde nach einem Umzug nicht aktualisiert.</p>
+    </li>
+    <li>
+      <div class="case-head"><h3>Mengenangabe von der Zutat getrennt</h3><span class="prio prio-high">Sofort beheben</span></div>
+      <p><strong>Händler A:</strong> „Apfelstücke 23,8 %, 7%, Apfelpulver“. Die Prozentangabe hängt an keiner Zutat mehr.</p>
+      <p class="case-why">Pflichtangabe. Mögliche Ursache: Fehler beim Übertragen aus einer Tabelle in ein Händlerfeld.</p>
+    </li>
+    <li>
+      <div class="case-head"><h3>Grundpreis fehlt</h3><span class="prio prio-high">Sofort beheben</span></div>
+      <p><strong>Marktplatz B:</strong> kein Preis je 100 g oder je Kilogramm angegeben.</p>
+      <p class="case-why">Preisangabe. Im Marktplatz-Datensatz sind Füllmenge und Einheit nicht gefüllt.</p>
+    </li>
+    <li>
+      <div class="case-head"><h3>„Bio“ im Titel ohne Zertifizierung</h3><span class="prio prio-high">Sofort prüfen</span></div>
+      <p><strong>Marktplatz B:</strong> „Porridge Zimt Apfel Haferbrei Frühstück Vegan Bio Hafer 400g“. Das Produkt ist nicht bio-zertifiziert.</p>
+      <p class="case-why">Die Bio-Aussage muss geprüft werden; die rechtliche Bewertung gehört nicht zum Audit. Zusätzlich fehlt die Marke im Titel.</p>
+    </li>
+    <li>
+      <div class="case-head"><h3>Produkt fehlt im Vegan-Filter</h3><span class="prio prio-mid">Nächste Listing-Pflege</span></div>
+      <p><strong>Händler A:</strong> Beschreibung nennt „vegan“, das Attribut „vegan“ ist nicht gesetzt. Wer im Händler-Shop nach veganen Produkten filtert, findet es nicht.</p>
+      <p class="case-why">Auffindbarkeit. Attribut und Beschreibung stimmen nicht überein.</p>
+    </li>
+  </ol>
+
+  <div class="case-sum">
+    <h3>Was dahintersteckt</h3>
+    <p>Sechs Abweichungen in drei Vertriebskanälen. Welche Abläufe dahinterstecken, klären wir erst gemeinsam mit Ihnen – von außen ist das nicht sicher erkennbar. Das Audit zeigt zuerst, wo die Daten auseinanderlaufen, welche Angaben zuerst geprüft werden sollten und wer sie korrigieren kann: Sie selbst, der Marktplatz oder der Händler.</p>
+    <a class="btn" href="termin/">Erstgespräch vereinbaren</a>
+  </div>
+</section>
+
 <section class="proof" id="stichprobe">
   <div class="wrap">
     <h2>Was meine laufende Stichprobe bei Lebensmittelherstellern bisher zeigt</h2>
@@ -83,55 +133,7 @@
 </section>
 
 
-<section class="case wrap" id="beispielbefund">
-  <h2>So sieht ein Befund im Audit aus</h2>
-  <p class="section-lead">Auszug aus einem Audit-Bericht. Produkt, Werte und Händler sind verändert; die Art der Abweichungen stammt aus echten Befunden der Stichprobe.</p>
 
-  <dl class="case-meta">
-    <div><dt>Produkt</dt><dd>Hafer-Porridge Zimt &amp; Apfel, 400 g</dd></div>
-    <div><dt>Geprüfte Kanäle</dt><dd>Eigener Shop, Händler A (Onlineshop einer Supermarktkette), Marktplatz B</dd></div>
-    <div><dt>Referenz</dt><dd>Verpackung und Produktspezifikation des Herstellers</dd></div>
-  </dl>
-
-  <ol class="case-list">
-    <li>
-      <div class="case-head"><h3>Nährwerte rechnen nicht auf</h3><span class="prio prio-high">Sofort beheben</span></div>
-      <p><strong>Marktplatz B:</strong> 1.631 kJ / 289 kcal je 100 g. 1.631 kJ entsprechen rund 390 kcal; Shop, Händler und Verpackung nennen 1.511 kJ / 358 kcal.</p>
-      <p class="case-why">Pflichtangabe. Vermutlich wurde nach einer Rezepturänderung nur ein Wert übernommen.</p>
-    </li>
-    <li>
-      <div class="case-head"><h3>Zweite, veraltete Herstelleranschrift</h3><span class="prio prio-high">Sofort beheben</span></div>
-      <p><strong>Händler A:</strong> alte Anschrift, Hausnummer und Postleitzahl zusammengeklebt („Bergstr. 4081379 München“). Shop und Verpackung nennen die aktuelle Anschrift.</p>
-      <p class="case-why">Pflichtangabe. Das Datenblatt beim Händler wurde seit dem Umzug nicht aktualisiert.</p>
-    </li>
-    <li>
-      <div class="case-head"><h3>Mengenangabe von der Zutat getrennt</h3><span class="prio prio-high">Sofort beheben</span></div>
-      <p><strong>Händler A:</strong> „Apfelstücke 23,8 %, 7%, Apfelpulver“. Die Prozentangabe hängt an keiner Zutat mehr.</p>
-      <p class="case-why">Pflichtangabe. Typischer Fehler beim Übertragen aus einer Tabelle in ein Händlerfeld.</p>
-    </li>
-    <li>
-      <div class="case-head"><h3>Grundpreis fehlt</h3><span class="prio prio-high">Sofort beheben</span></div>
-      <p><strong>Marktplatz B:</strong> kein Preis je 100 g oder je Kilogramm angegeben.</p>
-      <p class="case-why">Preisangabe. Das Feld für Füllmenge und Einheit ist im Marktplatz-Datensatz leer.</p>
-    </li>
-    <li>
-      <div class="case-head"><h3>Titel ohne Marke, „Bio“ ohne Grundlage</h3><span class="prio prio-mid">Nächste Listing-Pflege</span></div>
-      <p><strong>Marktplatz B:</strong> „Porridge Zimt Apfel Haferbrei Frühstück Vegan Bio Hafer 400g“. Das Produkt ist nicht bio-zertifiziert.</p>
-      <p class="case-why">Auffindbarkeit und Darstellung; die Bio-Aussage sollte zusätzlich rechtlich geprüft werden.</p>
-    </li>
-    <li>
-      <div class="case-head"><h3>Produkt fehlt im Vegan-Filter</h3><span class="prio prio-mid">Nächste Listing-Pflege</span></div>
-      <p><strong>Händler A:</strong> Beschreibung nennt „vegan“, das Attribut „vegan“ ist nicht gesetzt. Wer im Händler-Shop nach veganen Produkten filtert, findet es nicht.</p>
-      <p class="case-why">Auffindbarkeit. Attribut und Text werden getrennt gepflegt.</p>
-    </li>
-  </ol>
-
-  <div class="case-sum">
-    <h3>Was dahintersteckt</h3>
-    <p>Sechs Abweichungen, eine Ursache: Die drei Kanäle werden aus drei verschiedenen Tabellen befüllt, und Änderungen kommen nur in einer davon an. Im Audit gehört deshalb zu jedem Befund die Fundstelle mit URL – und am Ende eine Empfehlung, welche Angaben zuerst angeglichen werden und woraus die Kanäle künftig befüllt werden sollten.</p>
-    <a class="btn" href="termin/">Erstgespräch vereinbaren</a>
-  </div>
-</section>
 
 <section class="pattern">
   <div class="wrap two-col">
@@ -156,11 +158,19 @@
     <div class="offer-main">
       <p class="phase">Schritt 1</p>
       <h3>Produktdaten-Audit</h3>
-      <p>Ich prüfe Ihr Sortiment systematisch über Ihren Shop und die für Sie relevanten Händler und Marktplätze – etwa Amazon, Kaufland, OTTO oder REWE. Sie erhalten eine priorisierte Übersicht der gefundenen Abweichungen, jeweils mit Fundstelle und URL, sortiert nach Handlungsbedarf und geschäftlicher Relevanz.</p>
+      <p>Ich prüfe Ihr Sortiment über zwei gemeinsam festgelegte Vertriebskanäle, etwa Ihren Shop, Amazon, Kaufland oder den Onlineshop eines Händlers. Das Ergebnis liegt innerhalb von zehn Werktagen vor.</p>
+      <p class="deliv-title">Am Ende haben Sie:</p>
+      <ul class="deliv">
+        <li>die gefundenen Abweichungen je Produkt und Kanal, jeweils mit Fundstelle und URL</li>
+        <li>eine Reihenfolge nach Handlungsbedarf, Pflichtangaben getrennt von Auffindbarkeit</li>
+        <li>für jeden Punkt die Angabe, wer ihn korrigieren kann</li>
+        <li>einen Maßnahmenplan für die Bereinigung</li>
+      </ul>
+      <p class="scope"><strong>Was ist eine Produktfamilie?</strong> Produkte mit gleichem Produkttyp und denselben Kennzeichnungspflichten. Sorten und Größen zählen nicht extra: Zwölf Gewürzmischungen in drei Größen sind eine Familie, Gewürzmischungen, Saucen und Nudeln sind drei.</p>
     </div>
     <div class="offer-price">
       <span class="price">1.900 €</span>
-      <span class="price-note">zzgl. MwSt., Festpreis für bis zu acht Produktfamilien. Jede weitere Familie gegen festen Aufpreis.</span>
+      <span class="price-note">zzgl. MwSt., Festpreis für bis zu acht Produktfamilien und zwei Kanäle. Jede weitere Familie gegen festen Aufpreis.</span>
     </div>
   </article>
 
@@ -168,7 +178,7 @@
     <div class="offer-main">
       <p class="phase">Schritt 2</p>
       <h3>Produktdaten-Bereinigung</h3>
-      <p>Auf Basis des Audits bringe ich die betroffenen Angaben aus Ihren Unterlagen auf einen einheitlichen Stand und korrigiere sie in den relevanten Kanälen. Auf Wunsch entsteht dabei eine konsolidierte Produktdatenbasis, die Ihr Team künftig als Referenz verwendet.</p>
+      <p>Auf Basis des Audits bringe ich die betroffenen Angaben aus Ihren Unterlagen auf einen einheitlichen Stand. Wo Sie Zugriff haben – eigener Shop, Ihr Marktplatz-Konto –, setze ich die Korrekturen direkt um. Bei Händlern, die ihre Produktdaten selbst verwalten, bereite ich korrigierte Datensätze vor, stelle die Änderungsanfragen und prüfe nach, ob sie übernommen wurden. Auf Wunsch entsteht dabei eine konsolidierte Produktdatenbasis, die Ihr Team künftig als Referenz verwendet.</p>
       <p class="deliv-title">Am Ende haben Sie:</p>
       <ul class="deliv">
         <li>bereinigte Produktdaten für den vereinbarten Umfang</li>
@@ -219,6 +229,7 @@
     <h2>20 Minuten zum Einordnen</h2>
     <p>Wir sprechen über Ihr Sortiment, Ihre Vertriebskanäle und darüber, wo Produktdaten heute gepflegt werden. Danach kann ich Ihnen sagen, welcher Prüfumfang sinnvoll ist und ob Sie mit acht Produktfamilien auskommen.</p>
     <a class="btn btn-light" href="termin/">Erstgespräch vereinbaren</a>
+    <p class="cta-note">Kostenlos, 20 Minuten, unverbindlich.</p>
     <p class="contact-alt">Oder direkt: <a href="mailto:pascal@riverland-int.com">pascal@riverland-int.com</a> oder <a href="tel:+4915751110598">+49 1575 111 0598</a></p>
   </div>
 </section>
