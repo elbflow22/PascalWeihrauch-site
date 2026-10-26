@@ -2,10 +2,9 @@
 
 Statische Website (HTML/CSS/JS, keine Build-Schritte, keine Cookies, Schrift selbst gehostet).
 
-## Vor dem Livegang ersetzen
-- cal.com-Link nur in `termin/index.html` (2x) – alle Buttons und der QR-Code zeigen auf pascalweihrauch.de/termin
-- Zwei gelbe Platzhalter in datenschutz.html (Cal.com: Anschrift und Grundlage der USA-Übermittlung)
-- Zahlen im Abschnitt „Stichprobe“ prüfen (Quelle: Tranche-1-Excel)
+## Vor dem Livegang
+- cal.com-Link: https://cal.com/pascal-weihrauch/produktdaten (in termin/index.html); DPA in cal.com akzeptieren
+- CNAME, robots.txt, sitemap.xml und 404.html sind enthalten
 
 ## Veröffentlichen mit GitHub Pages
 1. Repository-Einstellungen → Pages → Source: „Deploy from a branch“, Branch `main`, Ordner `/ (root)`.
