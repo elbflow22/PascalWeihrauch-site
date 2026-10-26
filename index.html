@@ -27,7 +27,7 @@
   <div class="wrap top-inner">
     <a class="brand" href="#">Pascal Weihrauch</a>
     <nav aria-label="Hauptnavigation">
-      <a href="#befund">Beispiel</a>
+      <a href="#beispielbefund">Beispiel</a>
       <a href="#stichprobe">Stichprobe</a>
       <a href="#leistungen">Leistungen</a>
       <a href="#arbeitsweise">Arbeitsweise</a>
@@ -46,7 +46,7 @@
     <p class="lead">Ich finde, wo die Produktdaten Ihrer Lebensmittel zwischen Shop, Handel und Marktplätzen auseinanderlaufen – und helfe Ihnen, daraus wieder eine einheitliche Datengrundlage zu machen.</p>
     <div class="hero-actions">
       <a class="btn" href="termin/">Erstgespräch vereinbaren</a>
-      <a class="textlink" href="#befund">Beispielbefund ansehen</a>
+      <a class="textlink" href="#beispielbefund">Beispielbefund ansehen</a>
     </div>
     <ul class="hero-facts">
       <li>Produktdaten-Audit zum Festpreis: 1.900 € für bis zu acht Produktfamilien</li>
@@ -55,7 +55,7 @@
     </ul>
   </div>
 
-  <figure class="exhibit" id="befund" aria-labelledby="ex-title">
+  <figure class="exhibit" id="vorschau" aria-labelledby="ex-title">
     <figcaption class="ex-head">
       <span id="ex-title" class="ex-title">Hafer-Porridge Zimt &amp; Apfel, 400 g</span>
       <span class="ex-anon">Beispiel nach echten Befunden, anonymisiert</span>
@@ -79,6 +79,57 @@
       <div><dt>20</dt><dd>betrafen Pflichtangaben: Nährwerte, Zutaten, Allergene, Anschrift, Grundpreis</dd></div>
       <div><dt>7 von 25</dt><dd>Herstellern hatten im Handel zwei verschiedene Anschriften im Umlauf</dd></div>
     </dl>
+  </div>
+</section>
+
+
+<section class="case wrap" id="beispielbefund">
+  <h2>So sieht ein Befund im Audit aus</h2>
+  <p class="section-lead">Auszug aus einem Audit-Bericht. Produkt, Werte und Händler sind verändert; die Art der Abweichungen stammt aus echten Befunden der Stichprobe.</p>
+
+  <dl class="case-meta">
+    <div><dt>Produkt</dt><dd>Hafer-Porridge Zimt &amp; Apfel, 400 g</dd></div>
+    <div><dt>Geprüfte Kanäle</dt><dd>Eigener Shop, Händler A (Onlineshop einer Supermarktkette), Marktplatz B</dd></div>
+    <div><dt>Referenz</dt><dd>Verpackung und Produktspezifikation des Herstellers</dd></div>
+  </dl>
+
+  <ol class="case-list">
+    <li>
+      <div class="case-head"><h3>Nährwerte rechnen nicht auf</h3><span class="prio prio-high">Sofort beheben</span></div>
+      <p><strong>Marktplatz B:</strong> 1.631 kJ / 289 kcal je 100 g. 1.631 kJ entsprechen rund 390 kcal; Shop, Händler und Verpackung nennen 1.511 kJ / 358 kcal.</p>
+      <p class="case-why">Pflichtangabe. Vermutlich wurde nach einer Rezepturänderung nur ein Wert übernommen.</p>
+    </li>
+    <li>
+      <div class="case-head"><h3>Zweite, veraltete Herstelleranschrift</h3><span class="prio prio-high">Sofort beheben</span></div>
+      <p><strong>Händler A:</strong> alte Anschrift, Hausnummer und Postleitzahl zusammengeklebt („Bergstr. 4081379 München“). Shop und Verpackung nennen die aktuelle Anschrift.</p>
+      <p class="case-why">Pflichtangabe. Das Datenblatt beim Händler wurde seit dem Umzug nicht aktualisiert.</p>
+    </li>
+    <li>
+      <div class="case-head"><h3>Mengenangabe von der Zutat getrennt</h3><span class="prio prio-high">Sofort beheben</span></div>
+      <p><strong>Händler A:</strong> „Apfelstücke 23,8 %, 7%, Apfelpulver“. Die Prozentangabe hängt an keiner Zutat mehr.</p>
+      <p class="case-why">Pflichtangabe. Typischer Fehler beim Übertragen aus einer Tabelle in ein Händlerfeld.</p>
+    </li>
+    <li>
+      <div class="case-head"><h3>Grundpreis fehlt</h3><span class="prio prio-high">Sofort beheben</span></div>
+      <p><strong>Marktplatz B:</strong> kein Preis je 100 g oder je Kilogramm angegeben.</p>
+      <p class="case-why">Preisangabe. Das Feld für Füllmenge und Einheit ist im Marktplatz-Datensatz leer.</p>
+    </li>
+    <li>
+      <div class="case-head"><h3>Titel ohne Marke, „Bio“ ohne Grundlage</h3><span class="prio prio-mid">Nächste Listing-Pflege</span></div>
+      <p><strong>Marktplatz B:</strong> „Porridge Zimt Apfel Haferbrei Frühstück Vegan Bio Hafer 400g“. Das Produkt ist nicht bio-zertifiziert.</p>
+      <p class="case-why">Auffindbarkeit und Darstellung; die Bio-Aussage sollte zusätzlich rechtlich geprüft werden.</p>
+    </li>
+    <li>
+      <div class="case-head"><h3>Produkt fehlt im Vegan-Filter</h3><span class="prio prio-mid">Nächste Listing-Pflege</span></div>
+      <p><strong>Händler A:</strong> Beschreibung nennt „vegan“, das Attribut „vegan“ ist nicht gesetzt. Wer im Händler-Shop nach veganen Produkten filtert, findet es nicht.</p>
+      <p class="case-why">Auffindbarkeit. Attribut und Text werden getrennt gepflegt.</p>
+    </li>
+  </ol>
+
+  <div class="case-sum">
+    <h3>Was dahintersteckt</h3>
+    <p>Sechs Abweichungen, eine Ursache: Die drei Kanäle werden aus drei verschiedenen Tabellen befüllt, und Änderungen kommen nur in einer davon an. Im Audit gehört deshalb zu jedem Befund die Fundstelle mit URL – und am Ende eine Empfehlung, welche Angaben zuerst angeglichen werden und woraus die Kanäle künftig befüllt werden sollten.</p>
+    <a class="btn" href="termin/">Erstgespräch vereinbaren</a>
   </div>
 </section>
 

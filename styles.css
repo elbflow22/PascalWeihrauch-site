@@ -177,3 +177,23 @@ p{margin:0 0 1em}
 .legal-table{border-collapse:collapse;width:100%;font-size:.95rem;margin-top:8px}
 .legal-table th,.legal-table td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
 .legal-table th{background:var(--mist)}
+
+/* Beispielbefund */
+.case{padding-top:96px;padding-bottom:96px}
+.case-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin:36px 0 0;padding:20px 0;border-top:2px solid var(--ink);border-bottom:1px solid var(--line)}
+.case-meta dt{color:var(--muted);font-size:.88rem}
+.case-meta dd{margin:4px 0 0;font-weight:500}
+.case-list{list-style:none;counter-reset:c;padding:0;margin:8px 0 0}
+.case-list li{counter-increment:c;display:grid;grid-template-columns:3rem 1fr;column-gap:8px;padding:22px 0;border-bottom:1px solid var(--line)}
+.case-list li::before{content:counter(c,decimal-leading-zero);grid-row:1 / span 3;font-weight:700;color:var(--muted);padding-top:2px}
+.case-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 16px;margin-bottom:8px}
+.case-list p{margin:0 0 6px;max-width:72ch}
+.case-why{color:var(--muted);font-size:.95rem}
+.prio{font-size:.85rem;font-weight:500;padding:2px 8px;border-radius:3px;white-space:nowrap}
+.prio-high{background:var(--marker);color:var(--ink)}
+.prio-mid{background:var(--mist);color:var(--ink)}
+.case-sum{margin-top:36px;padding:28px;background:var(--mist)}
+.case-sum p{margin-top:10px;max-width:70ch}
+.case-sum .btn{margin-top:8px}
+@media (max-width:900px){.case-meta{grid-template-columns:1fr;gap:14px}}
+@media (max-width:520px){.case-list li{grid-template-columns:1fr}.case-list li::before{grid-row:auto;margin-bottom:4px}}
