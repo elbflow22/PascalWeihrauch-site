@@ -21,7 +21,7 @@
       ["1.631 kJ / 289 kcal", "Rechnet nicht auf: 1.631 kJ sind rund 390 kcal."],
       ["Vollkorn-Haferflocken 68 %, Apfelstücke 24 %, Apfelpulver 7 %, Zimt 1 %"],
       ["Musterfood", "Nur der Markenname, keine Anschrift."],
-      ["–", "Grundpreis fehlt."]
+      ["keine Angabe", "Grundpreis fehlt."]
     ]
   };
 
