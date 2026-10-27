@@ -279,3 +279,14 @@ section{padding-block:clamp(64px,9vw,112px)}
 .card-no{display:block;font-weight:700;color:var(--muted);font-size:.9rem;margin-bottom:6px}
 .card-go{display:inline-block;margin-top:10px;font-weight:500;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
 .hub-more{margin-top:28px}
+
+/* Logo Variante D und Markenblau (27.10.2026) */
+:root{--brand:#24508F;--link:#24508F}
+@media (prefers-color-scheme:dark){:root{--brand:#8FB2E8;--link:#8FB2E8}}
+.brand{display:inline-flex;align-items:center;line-height:0;flex:none}
+.brand img{display:block;height:22px;width:auto}
+@media (max-width:480px){.brand img{height:15px}}
+@media (max-width:380px){.brand img{height:13px}}
+.textlink{color:var(--link)}
+.article p a:not(.btn),.article li a:not(.btn),.legal a,.contact-meta a:not(.btn),.sources a{color:var(--link)}
+.article-cta .textlink,.proof a{color:var(--band-ink)}
