@@ -198,3 +198,4 @@ p{margin:0 0 1em}
 @media (max-width:900px){.case-meta{grid-template-columns:1fr;gap:14px}}
 @media (max-width:520px){.case-list li{grid-template-columns:1fr}.case-list li::before{grid-row:auto;margin-bottom:4px}}
 .cta-note{margin-top:10px !important;font-size:.92rem;color:#C3CCD8}
+.proof-note{margin:36px 0 0;max-width:70ch;font-size:.92rem;color:#C3CCD8}
