@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>kJ und kcal passen nicht zusammen: Nährwerte im Handel prüfen | Pascal Weihrauch</title>
+<meta name="description" content="Wie Sie widersprüchliche Nährwerte Ihres Lebensmittels im Onlinehandel erkennen: kJ-kcal-Verhältnis als Faustregel, Nachrechnen aus den Nährstoffen nach LMIV, Bezugsgröße – mit Rechner.">
+<link rel="canonical" href="https://pascalweihrauch.de/befunde/kj-kcal-passen-nicht/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://pascalweihrauch.de/befunde/kj-kcal-passen-nicht/">
+<meta property="og:title" content="kJ und kcal passen nicht zusammen: Nährwerte im Handel prüfen | Pascal Weihrauch">
+<meta property="og:description" content="Wie Sie widersprüchliche Nährwerte Ihres Lebensmittels im Onlinehandel erkennen: kJ-kcal-Verhältnis als Faustregel, Nachrechnen aus den Nährstoffen nach LMIV, Bezugsgröße – mit Rechner.">
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://pascalweihrauch.de/"}, {"@type": "ListItem", "position": 2, "name": "Befunde aus der Praxis", "item": "https://pascalweihrauch.de/befunde/"}, {"@type": "ListItem", "position": 3, "name": "kJ und kcal", "item": "https://pascalweihrauch.de/befunde/kj-kcal-passen-nicht/"}]}, {"@type": "Article", "headline": "Warum passen kJ und kcal bei meinem Produkt im Onlineshop nicht zusammen?", "description": "Wie Sie widersprüchliche Nährwerte Ihres Lebensmittels im Onlinehandel erkennen: kJ-kcal-Verhältnis als Faustregel, Nachrechnen aus den Nährstoffen nach LMIV, Bezugsgröße – mit Rechner.", "datePublished": "2026-10-27", "dateModified": "2026-10-27", "inLanguage": "de-DE", "mainEntityOfPage": "https://pascalweihrauch.de/befunde/kj-kcal-passen-nicht/", "author": {"@type": "Person", "@id": "https://pascalweihrauch.de/#person", "name": "Pascal Weihrauch", "url": "https://pascalweihrauch.de/#ueber"}, "publisher": {"@id": "https://pascalweihrauch.de/#org"}}]}</script>
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt</a>
+<header class="top"><div class="wrap top-inner">
+  <a class="brand" href="../../">Pascal Weihrauch</a>
+  <nav aria-label="Hauptnavigation"><a href="../../#beispielbefund">Beispiel</a><a href="../../#stichprobe">Stichprobe</a><a href="../../#leistungen">Leistungen</a><a href="../../befunde/">Befunde</a><a href="../../#ueber">Über mich</a></nav>
+  <a class="btn btn-small" href="../../termin/">Erstgespräch vereinbaren</a>
+</div></header>
+<main id="inhalt" class="wrap article">
+<p class="crumbs"><a href="../../">Startseite</a> <span aria-hidden="true">›</span> <a href="../../befunde/">Befunde aus der Praxis</a> <span aria-hidden="true">›</span> <span>kJ und kcal</span></p>
+<article>
+<h1>Warum passen kJ und kcal bei meinem Produkt im Onlineshop nicht zusammen?</h1>
+<p class="answer">Kilojoule (kJ) und Kilokalorien (kcal) beschreiben denselben Energiegehalt. Bei vielen Lebensmitteln liegt das Verhältnis kJ geteilt durch kcal ungefähr zwischen 4,0 und 4,3. Das ist eine Faustregel für eine erste Prüfung, keine gesetzliche Grenze: Liegt das Verhältnis deutlich daneben, lohnt es sich, Werte und Bezugsgröße genauer anzusehen.</p>
+
+<h2>Beispiel aus der Praxis</h2>
+<p>Trockenes Hafer-Porridge zum Anrühren; auf der Verpackung sind die Nährwerte je 100 g angegeben.</p>
+<div class="table-wrap"><table class="fall"><thead><tr><th>Kanal</th><th>Energie</th><th>kJ ÷ kcal</th><th>Bewertung</th></tr></thead><tbody><tr><td>Eigener Shop</td><td>1.511 kJ / 358 kcal je 100 g</td><td>4,22</td><td>✓ im üblichen Bereich</td></tr><tr class="bad"><td>Händler A</td><td>358 kJ / 1.511 kcal je 100 g</td><td>0,24</td><td>✗ Werte vertauscht</td></tr><tr class="bad"><td>Marktplatz B</td><td>1.631 kJ / 289 kcal je 100 g</td><td>5,64</td><td>✗ auffälliges Verhältnis – Datenquelle prüfen</td></tr><tr class="bad"><td>Händler C</td><td>1.511 kJ / 358 kcal je 100 ml</td><td>4,22</td><td>✗ Bezugsgröße weicht von der Verpackung ab</td></tr></tbody></table></div>
+<p class="ex-note"><strong>Zum Beispiel:</strong> Produktnamen, Unternehmen, Anschriften und Zahlen sind verändert. Das Beispiel veranschaulicht Abweichungen, die bei meiner Recherche beobachtet wurden; es bildet keinen unveränderten Einzelfall ab.</p>
+
+<div class="calc" id="rechner">
+  <h2>Schnellprüfung: Verhältnis</h2>
+  <div class="calc-row"><label>kJ <input type="text" id="kj" inputmode="decimal" value="1631"></label><label>kcal <input type="text" id="kcal" inputmode="decimal" value="289"></label></div>
+  <p class="calc-out" id="out" aria-live="polite"></p>
+  <h2 class="calc-h2">Energiegehalt aus Nährstoffen näherungsweise berechnen</h2>
+  <div class="calc-row">
+    <label>Fett (g) <input type="text" id="fat" inputmode="decimal" value="7"></label>
+    <label>Kohlenhydrate (g) <input type="text" id="carb" inputmode="decimal" value="58"></label>
+    <label>Eiweiß (g) <input type="text" id="prot" inputmode="decimal" value="13"></label>
+    <label>Ballaststoffe (g) <input type="text" id="fib" inputmode="decimal" value="9"></label>
+  </div>
+  <p class="calc-out" id="out2" aria-live="polite"></p>
+  <p class="calc-note">Die Berechnung berücksichtigt Fett, Kohlenhydrate, Eiweiß und Ballaststoffe nach den Umrechnungsfaktoren der LMIV. Ballaststoffe werden getrennt von den Kohlenhydraten eingegeben, so wie sie in der Nährwerttabelle stehen. Weitere energieliefernde Bestandteile wie Alkohol, mehrwertige Alkohole oder organische Säuren werden nicht erfasst. Das Ergebnis dient der Orientierung und ersetzt keine vollständige Nährwertberechnung; gerundete Angaben führen zu kleinen Abweichungen.</p>
+</div>
+
+<h2>Was daran problematisch ist</h2>
+<p>Für die meisten vorverpackten Lebensmittel ist eine Nährwertdeklaration vorgeschrieben. Beim Onlineverkauf müssen die verpflichtenden Informationen grundsätzlich bereits vor Abschluss des Kaufvertrags verfügbar sein. Widersprüchliche Energieangaben verunsichern Kundinnen und Kunden – gerade jene, die auf Kalorien achten – und können auf Fehler bei der Übertragung oder Pflege der Produktinformationen hinweisen.</p>
+
+<h2>Mögliche Ursachen</h2>
+<ul class="who"><li>kJ- und kcal-Feld wurden beim Übertragen vertauscht.</li><li>Ein Wert wurde aktualisiert, der andere nicht – etwa nach einer Rezepturänderung.</li><li>Die Bezugsgröße wurde falsch übernommen (100 ml statt 100 g).</li><li>Tippfehler oder falsche Spalte beim Import aus einer Tabelle.</li></ul>
+<p>Aus dem Verhältnis allein lässt sich die Ursache nicht ablesen. Es zeigt nur, dass die Angaben genauer geprüft werden sollten.</p>
+
+<h2>So prüfen Sie es selbst</h2>
+<ol class="steps-check"><li>Teilen Sie kJ durch kcal. Ein Ergebnis deutlich unter 4,0 oder über 4,3 ist ein Warnsignal.</li><li>Rechnen Sie den Energiegehalt näherungsweise nach: Fett × 9 + Kohlenhydrate × 4 + Eiweiß × 4 + Ballaststoffe × 2 ergibt die kcal je 100 g; für kJ gelten die Faktoren 37, 17, 17 und 8. Bei Alkohol, mehrwertigen Alkoholen oder organischen Säuren kommen weitere Faktoren hinzu.</li><li>Prüfen Sie die Bezugsgröße: Sie muss mit der Verpackung übereinstimmen.</li><li>Gleichen Sie nach jeder Rezepturänderung alle Kanäle mit der aktuellen Spezifikation ab.</li><li>Vergleichen Sie dasselbe Produkt über die EAN bei mehreren Händlern.</li></ol>
+
+<h2>Wer es korrigieren kann</h2>
+<ul class="who"><li><strong>Eigener Shop und eigene Marktplatz-Angebote:</strong> Sie selbst.</li><li><strong>Drogerie- und Supermarkt-Onlineshops:</strong> Diese Händler übernehmen Nährwerte meist aus Ihren Stammdaten oder einem Datenpool; die Korrektur läuft über Ihre Datenlieferung oder Ihren Ansprechpartner für Stammdaten.</li><li><strong>Angebote anderer Verkäufer auf Marktplätzen:</strong> je nach Plattform über eine eigene Korrektur am Produktkatalog, den Verkäufer oder den Marktplatz-Support.</li></ul>
+
+<h2>Was bei größeren Sortimenten schwierig wird</h2>
+<p>Einzelne Produktangaben lassen sich oft schnell vergleichen. Bei größeren Sortimenten, mehreren Vertriebspartnern und zahlreichen Produktvarianten steigt der Prüf- und Abstimmungsaufwand jedoch erheblich: Dann geht es nicht nur darum, Fehler zu erkennen, sondern festzustellen, welche Produktseiten betroffen sind, aus welcher Datenquelle die Abweichung stammen könnte und wer eine Korrektur veranlassen kann. Rezepturänderungen können zudem die deklarierten Nährwerte beeinflussen; dann muss geprüft werden, ob die Angaben in allen Kanälen weiterhin mit der aktuellen Spezifikation übereinstimmen.</p>
+<section class="article-cta"><h2>Stimmen die Nährwertangaben Ihrer Produkte über alle Vertriebskanäle überein?</h2><p>Ich prüfe Ihre Produkte über verschiedene Vertriebskanäle und dokumentiere jede festgestellte Abweichung mit Fundstelle. In einem kostenlosen Erstgespräch klären wir, ob eine systematische Prüfung für Ihr Sortiment sinnvoll ist.</p><a class="btn btn-light" href="../../termin/">20-Minuten-Erstgespräch vereinbaren</a> <a class="textlink" href="../../#leistungen">Leistung und Preis</a></section>
+<h2>Quellen und Hinweise</h2><ul class="sources"><li><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02011R1169-20250401">Verordnung (EU) Nr. 1169/2011 (LMIV)</a> – Art. 16 und Anhang V (Ausnahmen), Art. 30 (Inhalt der Nährwertdeklaration), Art. 31 (Berechnung), Anhang XIV (Umrechnungsfaktoren)</li></ul><p class="legal-note">Diese Seite beschreibt typische Datenabweichungen und gibt allgemeine Hinweise. Sie ist keine Rechtsberatung; ob im Einzelfall ein Verstoß vorliegt und wer verantwortlich ist, klärt Ihr Anwalt oder Verband.</p>
+</article>
+<aside class="author"><img src="../../pascal-weihrauch.jpg" alt="" width="64" height="80" loading="lazy"><div><p class="author-h"><strong>Über den Autor</strong></p><p>Pascal Weihrauch ist E-Commerce-Unternehmer und verkauft seit 2020 Lebensmittel über Online-Marktplätze. Sein Schwerpunkt ist die Qualität und Einheitlichkeit von Produktinformationen über verschiedene Vertriebskanäle.</p><p><a href="../../#ueber">Mehr über mich</a></p><p class="upd">Stand: 27. Oktober 2026</p></div></aside>
+<script>
+(function(){
+function v(id){var t=document.getElementById(id).value.trim().replace(',','.');if(t==='')return null;var x=Number(t);return isNaN(x)?NaN:x;}
+var o=document.getElementById('out'),o2=document.getElementById('out2');
+function f(){var a=v('kj'),b=v('kcal');o.className='calc-out';
+ if(a===null||b===null){o.textContent='Bitte beide Werte eingeben.';return;}
+ if(isNaN(a)||isNaN(b)||a<0||b<0){o.textContent='Bitte gültige, nicht negative Zahlen eingeben.';return;}
+ if(a===0&&b===0){o.textContent='Kein Energiegehalt angegeben – ein Verhältnis lässt sich nicht berechnen. Das ist für sich kein Datenfehler.';return;}
+ if(b===0){o.textContent='Das Verhältnis kann nicht berechnet werden (kcal = 0).';return;}
+ var r=a/b,t=r.toFixed(2).replace('.',','),low=(b<20||a<80)?' Bei sehr niedrigen Energiewerten kann die Rundung das Verhältnis stark beeinflussen; prüfen Sie die zugrunde liegenden Nährstoffangaben.':'';
+ if(r>=4.0&&r<=4.3){o.textContent='Verhältnis '+t+' – im üblichen Bereich. Das allein bestätigt nicht, dass die Werte richtig sind.'+low;o.className='calc-out ok';}
+ else{o.textContent='Verhältnis '+t+' – auffällig. Bitte Nährstoffangaben und Bezugsgröße prüfen.'+low;o.className='calc-out warn';}}
+function g(){var F=v('fat'),C=v('carb'),P=v('prot'),B=v('fib');
+ if([F,C,P,B].some(function(x){return x===null;})){o2.textContent='Bitte alle vier Werte eingeben (0, wenn nicht enthalten).';return;}
+ if([F,C,P,B].some(function(x){return isNaN(x)||x<0;})){o2.textContent='Bitte gültige, nicht negative Zahlen eingeben.';return;}
+ var kcal=F*9+C*4+P*4+B*2,kj=F*37+C*17+P*17+B*8;
+ o2.textContent='Näherungsweise '+Math.round(kj).toLocaleString('de-DE')+' kJ / '+Math.round(kcal).toLocaleString('de-DE')+' kcal je 100 g (ohne weitere energieliefernde Bestandteile).';}
+['kj','kcal'].forEach(function(i){document.getElementById(i).addEventListener('input',f);});
+['fat','carb','prot','fib'].forEach(function(i){document.getElementById(i).addEventListener('input',g);});
+f();g();})();
+</script>
+</main>
+<footer class="foot"><div class="wrap foot-inner">
+  <span>Pascal Weihrauch, ein Angebot der Riverland International GmbH</span>
+  <nav aria-label="Rechtliches"><a href="../../befunde/">Befunde aus der Praxis</a><a href="../../impressum.html">Impressum</a><a href="../../datenschutz.html">Datenschutz</a></nav>
+</div></footer>
+</body></html>

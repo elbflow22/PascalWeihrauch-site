@@ -6,15 +6,15 @@
       ["Hafer-Porridge Zimt & Apfel, 400 g"],
       ["1.511 kJ / 358 kcal"],
       ["Vollkorn-Haferflocken 68 %, Apfelstücke 24 %, Apfelpulver 7 %, Zimt 1 %"],
-      ["Musterfood GmbH, Flussgasse 2, 81369 München"],
-      ["1,25 € / 100 g"]
+      ["Musterfood GmbH, Musterstraße 1, 00000 Musterstadt"],
+      ["12,50 € / kg"]
     ],
     haendler: [
       ["Hafer Porridge Zimt Apfel 400g"],
       ["1.511 kJ / 358 kcal"],
       ["Vollkorn-Haferflocken 68,2 %, Apfelstücke 23,8 %, 7%, Apfelpulver, Zimt 1 %", "Die Mengenangabe hängt an keiner Zutat mehr."],
-      ["Musterfood GmbH, Bergstr. 4081379 München", "Zweite, veraltete Anschrift – Hausnummer und PLZ zusammengeklebt."],
-      ["1,25 € / 100 g"]
+      ["Musterfood GmbH, Alte Allee 400000 Musterstadt", "Zweite, veraltete Anschrift – Hausnummer und PLZ zusammengeklebt."],
+      ["12,50 € / kg"]
     ],
     markt: [
       ["Porridge Zimt Apfel Haferbrei Frühstück Vegan Bio Hafer 400g", "Keyword-Titel ohne Marke; „Bio“ ohne Zertifizierung."],
