@@ -17,7 +17,7 @@
       ["12,50 € / kg"]
     ],
     markt: [
-      ["Porridge Zimt Apfel Haferbrei Frühstück Vegan Bio Hafer 400g", "Keyword-Titel ohne Marke; „Bio“ ohne Zertifizierung."],
+      ["Porridge Zimt Apfel Haferbrei Frühstück Vegan Bio Hafer 400g", "Keyword-Titel ohne Marke; weicht von der Bezeichnung ab."],
       ["1.631 kJ / 289 kcal", "Rechnet nicht auf: 1.631 kJ sind rund 390 kcal."],
       ["Vollkorn-Haferflocken 68 %, Apfelstücke 24 %, Apfelpulver 7 %, Zimt 1 %"],
       ["Musterfood", "Nur der Markenname, keine Anschrift."],
@@ -55,16 +55,22 @@
 
   tabs.forEach(function (b) {
     b.addEventListener("click", function () {
-      tabs.forEach(function (t) { t.setAttribute("aria-selected", t === b ? "true" : "false"); });
+      tabs.forEach(function (t) {
+        t.setAttribute("aria-selected", t === b ? "true" : "false");
+        t.tabIndex = t === b ? 0 : -1;
+      });
       render(b.dataset.ch, true);
     });
     b.addEventListener("keydown", function (e) {
       var list = Array.prototype.slice.call(tabs), i = list.indexOf(b);
       if (e.key === "ArrowRight") { list[(i + 1) % list.length].focus(); list[(i + 1) % list.length].click(); }
-      if (e.key === "ArrowLeft") { list[(i + 2) % list.length].focus(); list[(i + 2) % list.length].click(); }
+      if (e.key === "ArrowLeft") { list[(i + list.length - 1) % list.length].focus(); list[(i + list.length - 1) % list.length].click(); }
+      if (e.key === "Home") { e.preventDefault(); list[0].focus(); list[0].click(); }
+      if (e.key === "End") { e.preventDefault(); list[list.length - 1].focus(); list[list.length - 1].click(); }
     });
   });
 
+  tabs.forEach(function (t) { t.tabIndex = t.getAttribute("aria-selected") === "true" ? 0 : -1; });
   render("shop", false);
 
   // Einmaliger Moment beim Laden: nach kurzer Pause wechselt die Ansicht zum Marktplatz.

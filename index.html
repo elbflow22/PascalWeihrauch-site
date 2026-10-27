@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Produktdaten-Audit für Lebensmittelhersteller | Pascal Weihrauch</title>
-<meta name="description" content="Ich finde, wo die Produktdaten von Lebensmittelherstellern zwischen Shop, Händlern und Marktplätzen auseinanderlaufen – und bringe sie auf einen Stand.">
+<meta name="description" content="Produktdaten für Lebensmittelhersteller: Ich finde Abweichungen zwischen Ihren Produktinformationen und den Angaben bei Händlern und Marktplätzen – und unterstütze Sie bei der Korrektur.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2316243A'/%3E%3Crect x='7' y='17' width='18' height='6' fill='%23FFE14D'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' text-anchor='middle' fill='%2316243A'%3EPW%3C/text%3E%3C/svg%3E">
 <link rel="canonical" href="https://pascalweihrauch.de/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
 <meta property="og:url" content="https://pascalweihrauch.de/">
 <meta property="og:title" content="Produktdaten-Audit für Lebensmittelhersteller | Pascal Weihrauch">
-<meta property="og:description" content="Ich finde, wo die Produktdaten Ihrer Lebensmittel zwischen Shop, Handel und Marktplätzen auseinanderlaufen.">
+<meta property="og:description" content="Dieselbe Packung. Drei verschiedene Produktdaten. Prüfung und Bereinigung von Produktdaten bei Händlern und Marktplätzen.">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -19,6 +19,7 @@
 {"@type":"ProfessionalService","@id":"https://pascalweihrauch.de/#org","name":"Pascal Weihrauch – Produktdaten","legalName":"Riverland International GmbH","url":"https://pascalweihrauch.de/","email":"pascal@riverland-int.com","telephone":"+4915751110598","address":{"@type":"PostalAddress","streetAddress":"Hangstraße 11","postalCode":"21075","addressLocality":"Hamburg","addressCountry":"DE"},"areaServed":"DE","founder":{"@id":"https://pascalweihrauch.de/#person"}}
 ]}
 </script>
+<meta name="color-scheme" content="light dark">
 </head>
 <body>
 <a class="skip" href="#inhalt">Zum Inhalt</a>
@@ -27,10 +28,11 @@
   <div class="wrap top-inner">
     <a class="brand" href="#">Pascal Weihrauch</a>
     <nav aria-label="Hauptnavigation">
+      <a href="#ergebnis">Ergebnis</a>
       <a href="#beispielbefund">Beispiel</a>
       <a href="#stichprobe">Stichprobe</a>
       <a href="#leistungen">Leistungen</a>
-      <a href="#arbeitsweise">Arbeitsweise</a>
+      <a href="#arbeitsweise">Ablauf</a>
       <a href="befunde/">Befunde</a>
       <a href="#ueber">Über mich</a>
     </nav>
@@ -40,201 +42,235 @@
 
 <main id="inhalt">
 
-<section class="hero wrap">
-  <div class="hero-text">
-    <p class="kicker">Produktdaten für Lebensmittelhersteller</p>
-    <h1>Dieselbe Packung. Drei verschiedene Produktdaten.</h1>
-    <p class="lead">Falsche Pflichtangaben, veraltete Produktinformationen und fehlende Suchattribute bleiben im Handel oft unbemerkt. Ich finde diese Abweichungen in Ihren Vertriebskanälen, dokumentiere sie nachvollziehbar und unterstütze Sie bei der Bereinigung.</p>
-    <div class="hero-actions">
-      <a class="btn" href="termin/">Erstgespräch vereinbaren</a>
-      <a class="textlink" href="#beispielbefund">Beispielbefund ansehen</a>
-    </div>
-    <ul class="hero-facts">
-      <li>Produktdaten-Audit zum Festpreis: 1.900 € für bis zu acht Produktfamilien</li>
-      <li>Jeder Befund mit Fundstelle und URL</li>
-      <li>Seit 2020 eigener Onlinehandel mit Lebensmitteln</li>
-    </ul>
-  </div>
-
-  <figure class="exhibit" id="vorschau" aria-labelledby="ex-title">
-    <figcaption class="ex-head">
-      <span id="ex-title" class="ex-title">Hafer-Porridge Zimt &amp; Apfel, 400 g</span>
-      <span class="ex-anon">Beispiel nach echten Befunden, anonymisiert</span>
-    </figcaption>
-    <div class="tabs" role="tablist" aria-label="Kanal wählen">
-      <button role="tab" aria-selected="true" aria-controls="ex-body" data-ch="shop">Eigener Shop</button>
-      <button role="tab" aria-selected="false" aria-controls="ex-body" data-ch="haendler">Händler</button>
-      <button role="tab" aria-selected="false" aria-controls="ex-body" data-ch="markt">Marktplatz</button>
-    </div>
-    <dl class="ex-body" id="ex-body" role="tabpanel" aria-live="polite"></dl>
-    <p class="ex-count"><span id="ex-n">0</span> Abweichungen gegenüber dem eigenen Shop</p>
-  </figure>
-</section>
-
-<section class="case wrap" id="beispielbefund">
-  <h2>So sieht ein Befund im Audit aus</h2>
-  <p class="section-lead">Auszug aus einem Audit-Bericht. Produkt, Werte und Händler sind verändert; die Art der Abweichungen stammt aus echten Befunden der Stichprobe.</p>
-
-  <dl class="case-meta">
-    <div><dt>Produkt</dt><dd>Hafer-Porridge Zimt &amp; Apfel, 400 g</dd></div>
-    <div><dt>Geprüfte Kanäle</dt><dd>Eigener Shop, Händler A (Onlineshop einer Supermarktkette), Marktplatz B</dd></div>
-    <div><dt>Referenz im Auftrag</dt><dd>Vom Hersteller bereitgestellte Spezifikation und Verpackung. In der öffentlichen Stichprobe vergleiche ich nur öffentlich sichtbare Angaben.</dd></div>
-  </dl>
-
-  <ol class="case-list">
-    <li>
-      <div class="case-head"><h3>Nährwerte rechnen nicht auf</h3><span class="prio prio-high">Sofort beheben</span></div>
-      <p><strong>Marktplatz B:</strong> 1.631 kJ / 289 kcal je 100 g. 1.631 kJ entsprechen rund 390 kcal; Shop, Händler und Verpackung nennen 1.511 kJ / 358 kcal.</p>
-      <p class="case-why">Pflichtangabe. Mögliche Ursache: Nach einer Rezepturänderung wurde nur ein Wert übernommen.</p>
-    </li>
-    <li>
-      <div class="case-head"><h3>Zweite, veraltete Herstelleranschrift</h3><span class="prio prio-high">Sofort beheben</span></div>
-      <p><strong>Händler A:</strong> alte Anschrift, Hausnummer und Postleitzahl zusammengeklebt („Alte Allee 400000 Musterstadt“). Shop und Verpackung nennen die aktuelle Anschrift.</p>
-      <p class="case-why">Pflichtangabe. Mögliche Ursache: Das Datenblatt beim Händler wurde nach einem Umzug nicht aktualisiert.</p>
-    </li>
-    <li>
-      <div class="case-head"><h3>Mengenangabe von der Zutat getrennt</h3><span class="prio prio-high">Sofort beheben</span></div>
-      <p><strong>Händler A:</strong> „Apfelstücke 23,8 %, 7%, Apfelpulver“. Die Prozentangabe hängt an keiner Zutat mehr.</p>
-      <p class="case-why">Pflichtangabe. Mögliche Ursache: Fehler beim Übertragen aus einer Tabelle in ein Händlerfeld.</p>
-    </li>
-    <li>
-      <div class="case-head"><h3>Grundpreis fehlt</h3><span class="prio prio-high">Sofort beheben</span></div>
-      <p><strong>Marktplatz B:</strong> kein Grundpreis (Preis je Kilogramm) angegeben.</p>
-      <p class="case-why">Preisangabe. Im Marktplatz-Datensatz sind Füllmenge und Einheit nicht gefüllt.</p>
-    </li>
-    <li>
-      <div class="case-head"><h3>„Bio“ im Titel ohne Zertifizierung</h3><span class="prio prio-high">Sofort prüfen</span></div>
-      <p><strong>Marktplatz B:</strong> „Porridge Zimt Apfel Haferbrei Frühstück Vegan Bio Hafer 400g“. Das Produkt ist nicht bio-zertifiziert.</p>
-      <p class="case-why">Die Bio-Aussage muss geprüft werden; die rechtliche Bewertung gehört nicht zum Audit. Zusätzlich fehlt die Marke im Titel.</p>
-    </li>
-    <li>
-      <div class="case-head"><h3>Produkt fehlt im Vegan-Filter</h3><span class="prio prio-mid">Nächste Listing-Pflege</span></div>
-      <p><strong>Händler A:</strong> Beschreibung nennt „vegan“, das Attribut „vegan“ ist nicht gesetzt. Wer im Händler-Shop nach veganen Produkten filtert, findet es nicht.</p>
-      <p class="case-why">Auffindbarkeit. Attribut und Beschreibung stimmen nicht überein.</p>
-    </li>
-  </ol>
-
-  <div class="case-sum">
-    <h3>Was dahintersteckt</h3>
-    <p>Sechs Abweichungen in drei Vertriebskanälen. Welche Abläufe dahinterstecken, klären wir erst gemeinsam mit Ihnen – von außen ist das nicht sicher erkennbar. Das Audit zeigt zuerst, wo die Daten auseinanderlaufen, welche Angaben zuerst geprüft werden sollten und wer sie korrigieren kann: Sie selbst, der Marktplatz oder der Händler.</p>
-    <a class="btn" href="termin/">Erstgespräch vereinbaren</a>
-    <a class="textlink case-more" href="befunde/">Weitere typische Befunde ansehen</a>
-  </div>
-</section>
-
-<section class="proof" id="stichprobe">
-  <div class="wrap">
-    <h2>Was ich bei über 100 Lebensmittelherstellern gefunden habe</h2>
-    <p class="section-lead">Im Oktober 2026 habe ich die Produktdaten mittelständischer Lebensmittelhersteller verglichen – im eigenen Shop, bei Händlern und auf Marktplätzen. Gezählt habe ich nur Abweichungen, die sich an zwei Stellen nachweisen ließen.</p>
-    <dl class="stats">
-      <div><dt>Fast jeder zweite</dt><dd>Hersteller hatte mindestens eine Abweichung in seinen Produktdaten.</dd></div>
-      <div><dt>9 von 10</dt><dd>Abweichungen lagen nicht im eigenen Shop, sondern bei Händlern und Drittanbietern – dort, wo Hersteller selten nachsehen.</dd></div>
-      <div><dt>Jede</dt><dd>Abweichung ist mit Datum, Link und Screenshot belegt. Was sich nicht eindeutig nachweisen ließ, habe ich gestrichen.</dd></div>
-    </dl>
-    <p class="proof-note">Die Hersteller habe ich gezielt ausgewählt, nicht zufällig. Die Zahlen sind deshalb kein Branchendurchschnitt.</p>
-  </div>
-</section>
-
-
-
-
-<section class="pattern">
-  <div class="wrap two-col">
-    <h2>Produktdaten werden einmal geschrieben und dann hundertfach kopiert.</h2>
-    <div class="prose">
-      <p>Shop, Datenblatt für den Handel, Tabelle für den Marktplatz, Export für den Großhandel: Jede Kopie wird irgendwann von Hand angepasst. Nach ein paar Jahren gibt es von jedem Produkt mehrere Versionen – und niemand weiß mehr sicher, welche stimmt.</p>
-      <p>Die Abweichungen aus der Stichprobe fallen in vier Gruppen:</p>
-      <ul class="findings">
-        <li><strong>Pflichtangaben, die nicht passen.</strong> Nährwerte, die nicht aufrechnen, zwei Herstelleranschriften, falsche Füllmengen, Grundpreise auf das Brutto- statt das Nettogewicht, abgeschnittene Zutatenlisten.</li>
-        <li><strong>Dasselbe Produkt unter verschiedenen Namen.</strong> Andere Titel, Schreibweisen und Bezeichnungen je Kanal – Kunden finden es schlechter, Filter wie „vegan“ greifen nicht.</li>
-        <li><strong>Fremde Texte im eigenen Listing.</strong> Beschreibungen anderer Produkte, falsche Firmengeschichten, maschinelle Übersetzungen beim Händler.</li>
-        <li><strong>Drittanbieter mit eigenen Daten.</strong> Auf Marktplätzen verkaufen oft Fremdhändler Ihre Produkte – mit eigenen Datensätzen. Häufig steht dort nur der Markenname statt des Herstellers mit Anschrift, mitunter ein ganz anderes Unternehmen oder ein Datensatz in fremder Sprache. Ihre eigenen Daten können dabei vollständig korrekt sein.</li>
+<!-- Hero (Variante C). Variante A: siehe Kommentar am Ende der Datei. -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="kicker">Produktdaten für Lebensmittelhersteller</p>
+      <h1>Dieselbe Packung. <span class="soft">Drei verschiedene Produktdaten.</span></h1>
+      <p class="lead">Ihre Produktinformationen sind intern gepflegt – doch bei Händlern und Marktplätzen können andere Angaben erscheinen. Ich finde diese Abweichungen, dokumentiere sie nachvollziehbar und unterstütze Sie bei der Korrektur.</p>
+      <div class="cta-row">
+        <a class="btn" href="termin/">Erstgespräch vereinbaren <span class="arr" aria-hidden="true">→</span></a>
+        <a class="textlink" href="#beispielbefund">Beispielbefund ansehen</a>
+      </div>
+      <ul class="trust">
+        <li>Jeder Befund mit Fundstelle und URL</li>
+        <li>Prüfung und Umsetzung aus einer Hand</li>
+        <li>Seit 2020 eigener Onlinehandel mit Lebensmitteln</li>
       </ul>
     </div>
-  </div>
-</section>
 
-<section class="offers wrap" id="leistungen">
-  <h2>Zwei Schritte: erst prüfen, dann bereinigen</h2>
-  <p class="section-lead">Das Audit steht immer am Anfang. Danach entscheiden Sie, ob Ihr Team die Punkte selbst behebt oder ich es übernehme.</p>
-
-  <article class="offer">
-    <div class="offer-main">
-      <p class="phase">Schritt 1</p>
-      <h3>Produktdaten-Audit</h3>
-      <p>Ich prüfe Ihr Sortiment über zwei gemeinsam festgelegte Vertriebskanäle, etwa Ihren Shop, Amazon, Kaufland oder den Onlineshop eines Händlers. Das Ergebnis liegt innerhalb von zehn Werktagen vor.</p>
-      <p class="deliv-title">Am Ende haben Sie:</p>
-      <ul class="deliv">
-        <li>die gefundenen Abweichungen je Produkt und Kanal, jeweils mit Fundstelle und URL</li>
-        <li>eine Reihenfolge nach Handlungsbedarf, Pflichtangaben getrennt von Auffindbarkeit</li>
-        <li>für jeden Punkt die Angabe, wer ihn korrigieren kann</li>
-        <li>einen Maßnahmenplan für die Bereinigung</li>
-      </ul>
-      <p class="scope"><strong>Was ist eine Produktfamilie?</strong> Produkte mit gleichem Produkttyp und denselben Kennzeichnungspflichten. Sorten und Größen zählen nicht extra: Zwölf Gewürzmischungen in drei Größen sind eine Familie, Gewürzmischungen, Saucen und Nudeln sind drei.</p>
-    </div>
-    <div class="offer-price">
-      <span class="price">1.900 €</span>
-      <span class="price-note">zzgl. MwSt., Festpreis für bis zu acht Produktfamilien und zwei Kanäle. Jede weitere Familie gegen festen Aufpreis.</span>
-    </div>
-  </article>
-
-  <article class="offer">
-    <div class="offer-main">
-      <p class="phase">Schritt 2</p>
-      <h3>Produktdaten-Bereinigung</h3>
-      <p>Auf Basis des Audits bringe ich die betroffenen Angaben aus Ihren Unterlagen auf einen einheitlichen Stand. Wo Sie Zugriff haben – eigener Shop, Ihr Marktplatz-Konto –, setze ich die Korrekturen direkt um. Bei Händlern, die ihre Produktdaten selbst verwalten, bereite ich korrigierte Datensätze vor, stelle die Änderungsanfragen und prüfe nach, ob sie übernommen wurden. Auf Wunsch entsteht dabei eine konsolidierte Produktdatenbasis, die Ihr Team künftig als Referenz verwendet.</p>
-      <p class="deliv-title">Am Ende haben Sie:</p>
-      <ul class="deliv">
-        <li>bereinigte Produktdaten für den vereinbarten Umfang</li>
-        <li>eine Dokumentation der Änderungen je Kanal</li>
-        <li>konsolidierte Referenzdaten für Ihr Team</li>
-        <li>eine Liste offener Punkte, die Händler oder Marktplätze noch freigeben müssen</li>
-      </ul>
-      <p class="scope">Umfasst je nach Befund: Pflichtangaben, Zutaten und Nährwerte, Herstellerangaben, Grundpreise, Titel und Bezeichnungen, Attribute und Kategorien, Markenzuordnung, Dubletten.</p>
-    </div>
-    <div class="offer-price">
-      <span class="price">Festpreis</span>
-      <span class="price-note">zzgl. MwSt., nach dem Audit festgelegt</span>
-    </div>
-  </article>
-</section>
-
-<section class="standards" id="arbeitsweise">
-  <div class="wrap">
-    <h2>Worauf Sie sich verlassen können</h2>
-    <ul class="standard-list">
-      <li><h3>Fester Umfang</h3><p>Vor dem Start steht fest, welche Produkte und Kanäle geprüft werden.</p></li>
-      <li><h3>Festpreis</h3><p>Keine Stundenabrechnung, keine Nachträge ohne Ihre Zustimmung.</p></li>
-      <li><h3>Jeder Befund belegt</h3><p>Fundstelle, URL und betroffene Angabe – nachprüfbar für Ihr Team.</p></li>
-      <li><h3>Priorisiert übergeben</h3><p>Keine ungeordnete Fehlerliste, sondern eine Reihenfolge nach Handlungsbedarf.</p></li>
-      <li><h3>Klare Laufzeit</h3><p>Das Audit liegt in der Regel innerhalb von zwei Wochen vor.</p></li>
-      <li><h3>Ein Ansprechpartner</h3><p>Vom Erstgespräch bis zur Bereinigung arbeiten Sie direkt mit mir.</p></li>
-    </ul>
-  </div>
-</section>
-
-<section class="about wrap" id="ueber">
-  <div class="about-grid">
-    <figure class="portrait">
-      <img src="pascal-weihrauch.jpg" width="800" height="1000" alt="Pascal Weihrauch" loading="lazy">
-      <figcaption><strong>Pascal Weihrauch</strong><span>Seit 2020 im Onlinehandel mit Lebensmitteln</span></figcaption>
+    <figure class="exhibit" id="vorschau" aria-labelledby="ex-title">
+      <figcaption class="ex-head">
+        <span id="ex-title" class="ex-title">Hafer-Porridge Zimt &amp; Apfel, 400 g</span>
+        <span class="ex-anon">Beispiel nach echten Befunden, anonymisiert</span>
+      </figcaption>
+      <div class="tabs" role="tablist" aria-label="Kanal wählen">
+        <button role="tab" aria-selected="true" aria-controls="ex-body" data-ch="shop">Eigener Shop</button>
+        <button role="tab" aria-selected="false" aria-controls="ex-body" data-ch="haendler">Händler</button>
+        <button role="tab" aria-selected="false" aria-controls="ex-body" data-ch="markt">Marktplatz</button>
+      </div>
+      <dl class="ex-body" id="ex-body" role="tabpanel" aria-live="polite"></dl>
+      <p class="ex-count"><span id="ex-n">0</span> Abweichungen gegenüber dem eigenen Shop</p>
     </figure>
-    <div class="prose">
-      <h2>Sie arbeiten direkt mit jemandem, der die Kanäle selbst kennt.</h2>
-      <p>Seit 2020 verkaufe ich Lebensmittel über Amazon und andere Marktplätze. Produktdaten kenne ich deshalb nicht aus Tabellen allein, sondern aus dem laufenden Betrieb: neue Artikel, geänderte Rezepturen, Marktplatzfelder, Händlerdaten, alte Exporte – und Angaben, die irgendwann nicht mehr zusammenpassen.</p>
-      <p>Heute konzentriere ich mich auf genau dieses Problem bei Lebensmittelherstellern. Vom ersten Audit bis zur Bereinigung arbeiten Sie direkt mit mir.</p>
-      <p class="limit">Ich prüfe Produktdaten auf Vollständigkeit, Einheitlichkeit und korrekte Übertragung. Eine rechtliche Bewertung gehört nicht zu meiner Leistung; dafür ist Ihr Anwalt oder Verband zuständig.</p>
+  </div>
+</section>
+
+<!-- Ergebnis -->
+<section id="ergebnis" class="outcome-sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Was Sie am Ende haben</p>
+      <h2>Klarheit über Ihre Produktdaten. Ein konkreter Plan für die Bereinigung.</h2>
+    </div>
+    <div class="outcomes">
+      <div class="outcome">
+        <span class="label">Transparenz</span>
+        <h3>Sie sehen, wo es auseinanderläuft.</h3>
+        <p>Jede Abweichung je Produkt und Kanal, belegt mit Fundstelle und URL, sortiert nach Handlungsbedarf.</p>
+      </div>
+      <div class="outcome">
+        <span class="label">Einheitliche Datenbasis</span>
+        <h3>Eine Referenz statt mehrerer Versionen.</h3>
+        <p>Abgestimmte Produktinformationen, die Ihr Team als Referenz an Händler und Marktplätze weitergeben kann.</p>
+      </div>
+      <div class="outcome">
+        <span class="label">Umsetzung</span>
+        <h3>Korrekturen systematisch voranbringen.</h3>
+        <p>Ich korrigiere Produktinformationen dort, wo die nötigen Zugriffsrechte vorliegen. Bei unabhängigen Händlern bereite ich Änderungen vor, koordiniere die Übermittlung und dokumentiere den Bearbeitungsstand.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="contact" id="kontakt">
-  <div class="wrap contact-inner">
-    <h2>20 Minuten zum Einordnen</h2>
-    <p>Wir sprechen über Ihr Sortiment, Ihre Vertriebskanäle und darüber, wo Produktdaten heute gepflegt werden. Danach kann ich Ihnen sagen, welcher Prüfumfang sinnvoll ist und ob Sie mit acht Produktfamilien auskommen.</p>
-    <a class="btn btn-light" href="termin/">Erstgespräch vereinbaren</a>
-    <p class="cta-note">Kostenlos, 20 Minuten, unverbindlich.</p>
-    <p class="contact-alt">Oder direkt: <a href="mailto:pascal@riverland-int.com">pascal@riverland-int.com</a> oder <a href="tel:+4915751110598">+49 1575 111 0598</a></p>
+<!-- Beispielbefund -->
+<section id="beispielbefund" class="case">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Arbeitsprobe</p>
+      <h2>So sieht ein Befund aus</h2>
+      <p class="lead">Auszug aus einem Audit-Bericht. Produkt, Werte und Händler sind verändert; die Art der Abweichungen stammt aus echten Befunden der Stichprobe.</p>
+    </div>
+    <dl class="case-meta">
+      <div><dt>Produkt</dt><dd>Hafer-Porridge Zimt &amp; Apfel, 400 g</dd></div>
+      <div><dt>Geprüfte Kanäle</dt><dd>Eigener Shop, Händler A (Onlineshop einer Supermarktkette), Marktplatz B</dd></div>
+      <div><dt>Referenz</dt><dd>Spezifikation und Verpackung vom Hersteller</dd></div>
+    </dl>
+    <div class="report">
+      <div class="report-head"><span>Audit-Bericht · Auszug</span><span>7 Abweichungen · 3 Kanäle</span></div>
+      <article class="finding"><span class="chip crit">Sofort klären</span><div class="f-body">
+        <h3>Nährwerte rechnen nicht auf</h3>
+        <p class="where">Marktplatz B: <mark>1.631 kJ / 289 kcal</mark> je 100 g. 1.631 kJ entsprechen rund 390 kcal; Shop, Händler und Verpackung nennen 1.511 kJ / 358 kcal.</p>
+        <p class="cause">Pflichtangabe. Mögliche Ursache: Nach einer Rezepturänderung wurde nur ein Wert übernommen.</p></div></article>
+      <article class="finding"><span class="chip crit">Sofort klären</span><div class="f-body">
+        <h3>Zweite, veraltete Herstelleranschrift</h3>
+        <p class="where">Händler A: alte Anschrift, Hausnummer und Postleitzahl zusammengeklebt (<mark>„Alte Allee 400000 Musterstadt“</mark>). Shop und Verpackung nennen die aktuelle Anschrift.</p>
+        <p class="cause">Pflichtangabe. Mögliche Ursache: Das Datenblatt beim Händler wurde nach einem Umzug nicht aktualisiert.</p></div></article>
+      <article class="finding"><span class="chip crit">Sofort klären</span><div class="f-body">
+        <h3>Mengenangabe von der Zutat getrennt</h3>
+        <p class="where">Händler A: <mark>„Apfelstücke 23,8 %, 7%, Apfelpulver“</mark>. Die Prozentangabe hängt an keiner Zutat mehr.</p>
+        <p class="cause">Pflichtangabe. Mögliche Ursache: Fehler beim Übertragen aus einer Tabelle in ein Händlerfeld.</p></div></article>
+      <article class="finding"><span class="chip crit">Sofort klären</span><div class="f-body">
+        <h3>Grundpreis fehlt</h3>
+        <p class="where">Marktplatz B: kein Grundpreis (Preis je Kilogramm) angegeben.</p>
+        <p class="cause">Preisangabe. Im Marktplatz-Datensatz sind Füllmenge und Einheit nicht gefüllt.</p></div></article>
+      <article class="finding"><span class="chip crit">Sofort klären</span><div class="f-body">
+        <h3>Lebensmittelunternehmer ohne Anschrift</h3>
+        <p class="where">Marktplatz B: unter Hersteller steht nur <mark>„Musterfood“</mark>, ohne Firmenname und Anschrift. Shop und Verpackung nennen beides.</p>
+        <p class="cause">Pflichtangabe. Mögliche Ursache: Der Datensatz stammt von einem Fremdhändler, der nur das Markenfeld befüllt hat.</p></div></article>
+      <article class="finding"><span class="chip warn">In die laufende Pflege</span><div class="f-body">
+        <h3>Bezeichnung weicht ab, Marke fehlt</h3>
+        <p class="where">Marktplatz B: <mark>„Porridge Zimt Apfel Haferbrei Frühstück Vegan Bio Hafer 400g“</mark> statt „Musterfood Hafer-Porridge Zimt &amp; Apfel, 400 g“.</p>
+        <p class="cause">Bezeichnung und Marke stimmen nicht mit Ihren Stammdaten überein. Werbliche Begriffe im Titel kennzeichne ich zur fachlichen Klärung.</p></div></article>
+      <article class="finding"><span class="chip ok">Beobachten</span><div class="f-body">
+        <h3>Produkt fehlt im Vegan-Filter</h3>
+        <p class="where">Händler A: Beschreibung nennt „vegan“, das Attribut „vegan“ ist nicht gesetzt. Wer im Händler-Shop nach veganen Produkten filtert, findet es nicht.</p>
+        <p class="cause">Auffindbarkeit. Attribut und Beschreibung stimmen nicht überein.</p></div></article>
+    </div>
+    <div class="case-close">
+      <p>Zu jedem Punkt steht im Bericht, wo die Korrektur ansetzt: in Ihren Stammdaten, bei der Datenweitergabe an Händler oder im Angebot eines Dritthändlers. Welche Abläufe dahinterstecken, klären wir gemeinsam; von außen ist das nicht sicher erkennbar. <a class="textlink" href="befunde/">Weitere typische Befunde</a></p>
+      <a class="btn" href="termin/">Erstgespräch vereinbaren <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Stichprobe -->
+<section id="stichprobe" class="proof">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Eigene Untersuchung · Oktober 2026</p>
+      <h2>Was ich bei Lebensmittelherstellern gefunden habe</h2>
+      <p class="lead">Ich habe öffentlich sichtbare Produktdaten mittelständischer Hersteller (10 bis 250 Mitarbeitende, ohne Konzernbindung) im eigenen Shop, bei Händlern und auf Marktplätzen verglichen. Als Abweichung zählt nur, was sich an zwei Stellen zum selben Produkt nachweisen ließ.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>34 von 78</b><span>geprüften Herstellern hatten mindestens eine Abweichung, die sich an zwei Stellen belegen ließ. In einer früheren Prüfrunde waren es 19 von 41.</span></div>
+      <div class="stat"><b>26 von 28</b><span>der wichtigsten Abweichungen lagen bei Händlern oder Drittanbietern – nicht im eigenen Shop des Herstellers.</span></div>
+      <div class="stat"><b>80 von 100</b><span>Funden hielten meiner Nachprüfung anhand der Belege stand. Die übrigen 20 habe ich gestrichen.</span></div>
+    </div>
+    <p class="method">Methodik: Die Hersteller wurden gezielt ausgewählt, nicht zufällig. Die Zahlen sind deshalb kein Branchendurchschnitt, sondern zeigen, wie häufig und wo solche Abweichungen vorkommen. Auch mit gepflegtem PIM und Datenpool können Angaben beim Handel abweichen – die eigenen Daten können vollständig korrekt sein.</p>
+    <div class="groups">
+      <div><h3>Pflichtangaben, die nicht passen</h3><p>Nährwerte, die nicht aufrechnen, zwei Herstelleranschriften, falsche Füllmengen, abgeschnittene Zutatenlisten.</p></div>
+      <div><h3>Ein Produkt, viele Namen</h3><p>Andere Titel und Bezeichnungen je Kanal. Filter wie „vegan“ greifen nicht.</p></div>
+      <div><h3>Fremde Texte im Listing</h3><p>Beschreibungen anderer Produkte, falsche Firmengeschichten, maschinelle Übersetzungen.</p></div>
+      <div><h3>Drittanbieter mit eigenen Daten</h3><p>Fremdhändler auf Marktplätzen mit eigenen Datensätzen, oft nur mit Markenname statt Hersteller und Anschrift.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Leistungen -->
+<section id="leistungen" class="offers">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Leistungen</p>
+      <h2>Prüfen und umsetzen aus einer Hand</h2>
+      <p class="lead">Das Audit zeigt, was zu tun ist. In der Bereinigung sorge ich dafür, dass es erledigt wird – oder Ihr Team übernimmt mit dem Maßnahmenplan selbst.</p>
+    </div>
+    <div class="offer">
+      <div class="step">
+        <span class="label">Schritt 1 · 10 Werktage nach Datenlieferung</span>
+        <h3>Produktdaten-Audit</h3>
+        <p>Ich prüfe Ihr Sortiment über zwei gemeinsam festgelegte Vertriebskanäle, etwa Ihren Shop, Amazon, Kaufland oder den Onlineshop eines Händlers.</p>
+        <ul class="dash">
+          <li>Befundmatrix: jede Abweichung je Artikel und Kanal, mit Fundstelle, Datum und Uhrzeit</li>
+          <li>Anforderungsliste mit Quelle und Stand jeder Prüfregel</li>
+          <li>Stichprobe: Ihre Stammdaten gegen Etikett oder Spezifikation</li>
+          <li>Priorisierung in drei Stufen und Maßnahmenplan mit Zuständigkeit</li>
+        </ul>
+        <p class="aside"><strong>Umfang:</strong> bis zu 8 Produktfamilien, 2 Vertriebskanäle und 150 Artikel (GTINs). Eine Produktfamilie sind Artikel mit denselben Pflichtangaben, etwa „Würzsaucen“; Sorten und Größen gehören dazu, jede GTIN zählt als Artikel. Hat Ihr Sortiment mehr Artikel, wählen wir gemeinsam aus. Ergebnis innerhalb von 10 Werktagen, nachdem ich die vollständige Datenlieferung bestätigt habe.</p>
+        <div class="price"><b>1.900 €</b><small>zzgl. MwSt. · Festpreis. Rechnung erst nach Lieferung. Größerer Umfang auf Anfrage.</small></div>
+      </div>
+      <div class="step">
+        <span class="label">Schritt 2 · Umfang nach Audit</span>
+        <h3>Produktdaten-Bereinigung</h3>
+        <p>Ich bringe die betroffenen Angaben aus Ihren Unterlagen auf einen einheitlichen Stand. Wo die nötigen Zugriffsrechte vorliegen, etwa im eigenen Shop oder Marktplatz-Konto, setze ich direkt um. Bei unabhängigen Händlern bereite ich korrigierte Datensätze vor, koordiniere die Übermittlung und dokumentiere den Bearbeitungsstand.</p>
+        <ul class="dash">
+          <li>Bereinigte Produktdaten für den vereinbarten Umfang</li>
+          <li>Dokumentation der Änderungen je Kanal</li>
+          <li>Konsolidierte Referenzdaten für Ihr Team</li>
+          <li>Stand je Händler: übernommen, offen, abgelehnt</li>
+        </ul>
+        <p class="aside">Je nach Befund: Pflichtangaben, Zutaten und Nährwerte, Herstellerangaben, Grundpreise, Titel, Attribute und Kategorien, Markenzuordnung, Dubletten.</p>
+        <div class="price"><b>Festpreis</b><small>zzgl. MwSt. · Umfang und Preis nach dem Audit festgelegt, keine Stundenabrechnung</small></div>
+      </div>
+      <div class="offer-bridge">
+        <span>Unsicher, ob der Umfang reicht? Das klären wir im Erstgespräch.</span>
+        <a class="textlink" href="termin/">Umfang besprechen →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ablauf (id bleibt "arbeitsweise" für bestehende Links) -->
+<section id="arbeitsweise" class="process-sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">So läuft die Zusammenarbeit ab</p>
+      <h2>Fester Umfang, feste Termine, keine Überraschungen</h2>
+    </div>
+    <ol class="process">
+      <li><h3>Erstgespräch</h3><p>Sortiment, Kanäle und wo Ihre Produktdaten heute gepflegt werden.</p><span class="dur">15 Min · kostenlos</span></li>
+      <li><h3>Auftakt</h3><p>Familien, Kanäle und Artikelauswahl schriftlich festlegen. Danach liefern Sie Artikelliste und Produktdaten.</p><span class="dur">ca. 30 Min</span></li>
+      <li><h3>Audit</h3><p>Prüfung, Belege, Priorisierung. Ein Ansprechpartner, kein Weiterreichen.</p><span class="dur">10 Werktage nach Datenlieferung</span></li>
+      <li><h3>Ergebnisgespräch</h3><p>Wir gehen den Bericht gemeinsam durch und legen fest, wer was korrigiert.</p><span class="dur">bis 45 Min</span></li>
+      <li><h3>Bereinigung</h3><p>Korrekturen umsetzen, Händleranfragen stellen, Übernahme nachprüfen.</p><span class="dur">optional · Festpreis</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- Über mich -->
+<section id="ueber" class="about">
+  <div class="wrap why">
+    <div class="portrait">
+      <img src="pascal-weihrauch.jpg" width="800" height="1000" alt="Pascal Weihrauch" loading="lazy">
+    </div>
+    <div class="why-copy">
+      <p class="kicker">Warum mit mir arbeiten</p>
+      <h2>Sie arbeiten direkt mit jemandem, der die Kanäle aus dem Betrieb kennt.</h2>
+      <p>Seit 2020 verkaufe ich Lebensmittel über Amazon und andere Marktplätze. Neue Artikel, geänderte Rezepturen, Marktplatzfelder, Händlerdaten: Ich kenne die Stellen, an denen Angaben unterwegs verloren gehen, aus eigener Praxis. Heute konzentriere ich mich auf genau dieses Problem bei Lebensmittelherstellern.</p>
+      <div class="standards">
+        <div><b>Fester Umfang</b><span>Produkte und Kanäle stehen vor dem Start fest.</span></div>
+        <div><b>Festpreis</b><span>Keine Nachträge ohne Ihre Zustimmung.</span></div>
+        <div><b>Jeder Befund belegt</b><span>Fundstelle, URL, betroffene Angabe.</span></div>
+        <div><b>Rechnung nach Lieferung</b><span>Keine Vorauszahlung.</span></div>
+      </div>
+      <p class="disclaimer">Ich prüfe, ob Angaben vorhanden sind, ob sie zwischen Quellen übereinstimmen und ob sie dokumentierten Anforderungen formal entsprechen. Ob eine Angabe im Einzelfall rechtlich zulässig ist, beurteile ich nicht; solche Fälle kennzeichne ich zur fachlichen Klärung durch Ihre Qualitätssicherung, Ihren Anwalt oder Verband.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Kontakt -->
+<section id="kontakt" class="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-text">
+      <p class="kicker">Erstgespräch</p>
+      <h2>15 Minuten, um Ihren Fall einzuordnen.</h2>
+      <p class="lead">Wir sprechen über Ihr Sortiment, Ihre Kanäle und wo Produktdaten heute gepflegt werden. Danach wissen Sie, welcher Prüfumfang sinnvoll ist.</p>
+    </div>
+    <div class="contact-meta">
+      <a class="btn" href="termin/">Erstgespräch vereinbaren <span class="arr" aria-hidden="true">→</span></a>
+      <span>Kostenlos und unverbindlich.</span>
+      <span>Oder direkt: <a href="mailto:pascal@riverland-int.com">pascal@riverland-int.com</a> · <a href="tel:+4915751110598">+49 1575 111 0598</a></span>
+    </div>
   </div>
 </section>
 
@@ -248,5 +284,10 @@
 </footer>
 
 <script src="exhibit.js"></script>
+<!--
+  Hero-Variante A (nach Review vom 27.10. zurückgestellt: "Überall richtig" verspricht mehr, als steuerbar ist):
+  <p class="kicker">Produktdaten · Lebensmittelhersteller</p>
+  <h1>Ihre Produktdaten. <span class="soft">Überall richtig.</span></h1>
+-->
 </body>
 </html>
